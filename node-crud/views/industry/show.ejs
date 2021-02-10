@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Industry Detail</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <h3><a href="/industry">industry List</a></h3>
+    <h1>Industry Detail</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td>Industry Name</td>
+          <td>:</td>
+          <td><%= industry.name %></td>
+        </tr>
+        <tr>
+          <td>Live Age</td>
+          <td>:</td>
+          <td><%= industry.live_age %></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+    <h3><a href="/industry/edit/<%= industry._id%>">EDIT</a></h3>
+    <form action="/industry/delete/<%= industry._id%>" method="post">
+      <button type="submit">DELETE</button>
+    </form>
+  </div>
+</body>
+
+</html>

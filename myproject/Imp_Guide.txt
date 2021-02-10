@@ -1,0 +1,40 @@
+Useful Project.
+
+
+IMP :
+  Createed folder controller,model and config and of course under files also newly created.
+
+
+REF :
+https://codingstatus.com/how-to-install-express-application-using-express-generator-tool/
+https://codingstatus.com/express-mvc-structure/
+https://codingstatus.com/connect-mongodb-with-node-js-using-mongoose/
+
+Fetch Data : https://codingstatus.com/fetch-data-from-mongodb-using-mongoose/
+
+
+
+
+EXTRAS :
+https://salitha94.blogspot.com/2018/08/fetch-data-from-mongodb-using-express.html
+
+
+
+
+Run :
+nexususer@comopen12:~/myproject/nodeapp$ nodemon index.js
+And Browser hit url : http://localhost:3000/
+
+
+For new js File : type "var expr" and tab to get snippet(getting suggestion snippets).
+
+
+
+
+ECMAScript - ES6 Use Step :
+
+https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const
+
+"jshint.options": {
+    "esversion": 6
+  }

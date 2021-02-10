@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Industry</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <h3><a href="/industry">industry List</a></h3>
+    <h1>Create New Industry</h1>
+    <form action="/industry/save" method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td>Industry Name</td>
+            <td><input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <td>Live Age</td>
+            <td><textarea name="live_age"></textarea></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><input type="submit" value="Save" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>

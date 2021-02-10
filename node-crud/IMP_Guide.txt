@@ -1,0 +1,28 @@
+
+IMP : Runnning Project Sample.
+
+https://www.djamware.com/post/58a91cdf80aca748640ce353/how-to-create-rest-api-easily-using-nodejs-expressjs-mongoosejs-and-mongodb
+https://www.djamware.com/post/58b27ce080aca72c54645983/how-to-create-nodejs-expressjs-and-mongodb-crud-web-application
+
+
+
+express node-crud --view=ejs
+cd node-crud && 
+npm install
+npm install mongoose --save
+npm install -g nodemon
+npm install --save body-parser
+
+
+
+IMP NOTE : www/bin code added in app.js.
+Status : Running 22 December 2020.
+
+
+// cmd : nexususer@comopen12:~/express-crud$ node app.js
+      or nexususer@comopen12:~/express-crud$ nodemon app.js
+
+
+
+// Basic Route Run :   http://localhost:3030/
+// Project Own Route URL : http://localhost:3030/industry

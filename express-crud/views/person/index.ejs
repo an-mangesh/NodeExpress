@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title> <%= title%> </title>
+</head>
+
+<body>
+  <h3><a href='/person/create/'> Create New Records </a></h3>
+  <h1>All Records</h1>
+  <% if(person.length > 0) { %>
+  <table>
+    <tr>
+      <th>Sr No.</th>
+      <th>Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <% for(var i=0;i<person.length;i++) { %>
+    <tr>
+      <td> <%= i %> </td>
+      <td> <%= person[i].name %> </td>
+      <td> <a href='/person/edit/<%= person[i]._id %>'> Edit </a> </td>
+      <td>
+        <form action="/person/delete/<%= person[i]._id%>" method="post">
+          <button type="submit">DELETE</button>
+        </form>
+
+      </td>
+    </tr>
+    <% } %>
+  </table>
+  <% } else { %>
+  <h1>Records Are Not Exists in it.</h1>
+  <% } %>
+
+</body>
+
+</html>

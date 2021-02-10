@@ -1,0 +1,54 @@
+html
+	head
+		title Express JS Form Tester
+	body
+		form(action="/",method="POST")
+			div
+				label(for='say') Say Somethig :
+				input(type="text",name="name",value="John Doe")
+			br
+			br
+			div
+				label(for="address") Address
+				textarea(name="address")
+			br
+			br
+			div
+				label(for='email') Email Id :
+				input(type="email",name="email",value="john_doe@test.com")
+			br
+			br
+			div
+				label(for='gender') Gender :
+				input(type="radio",name="gender",value="male",checked="true") 
+				| Male
+				input(type="radio",name="gender",value="female")
+				| Female
+			br
+			br
+			div
+				label(for='education') education :
+				input(type="checkbox",name="education",value="Diploma",checked=true) 
+				| Diploma
+				input(type="checkbox",name="education",value="Graduate",checked=true.toString())
+				| Graduate
+				input(type="checkbox",name="education",value="Post Graduate",checked=false)
+				| Post Graduate
+			br
+			br
+			div
+				label(for="experience") Experience :
+				select(name="experience")
+					option(name="Fresher") Fresher
+					option(name="Intermediate Fresher") Intermediate Fresher
+					option(name="Intermediate Experiance" selected=true) Intermediate Experiance
+					option(name="Experience") Experience
+					option(name="Expert") Expert
+			br
+			br
+			div
+				label(for="UserAvtar") Select User Avtar Image
+				input(type="file",name="user_avtar")
+			br
+			br
+			button(type="submit") Take Here

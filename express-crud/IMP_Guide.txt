@@ -1,0 +1,31 @@
+
+//Express CRUD.
+
+Command Prompt Commands :
+1. express express-crud --view=ejs          // Creates Express Js App With Creation of Folder named as express-crud
+2. cd express-crud && npm install              // insert into express-crud folder and install npm.
+3. npm install mongoose --save
+4. npm install -g nodemon
+5. npm install --save body-parser
+
+6. Mongo Shell Command : use express_mongoose_db             // Database is created through shell command prompt.
+    IMP Only Databse Is Created from mongo shell command.
+    Collection Or Table Created through Code Only : PersonController.save() or Submission of form data.
+
+
+
+
+Reference Links :
+https://www.djamware.com/post/58a91cdf80aca748640ce353/how-to-create-rest-api-easily-using-nodejs-expressjs-mongoosejs-and-mongodb
+https://www.djamware.com/post/58b27ce080aca72c54645983/how-to-create-nodejs-expressjs-and-mongodb-crud-web-application
+
+
+
+IMP NOTE : www/bin code added in app.js.
+Status : Running 22 December 2020.
+
+// cmd : nexususer@comopen12:~/express-crud$ node app.js
+      or nexususer@comopen12:~/express-crud$ nodemon app.js
+
+// Basic Route Run :   http://localhost:3000/
+// Project Own Route URL : http://localhost:3000/person

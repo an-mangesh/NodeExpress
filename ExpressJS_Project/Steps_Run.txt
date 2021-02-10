@@ -1,0 +1,20 @@
+// Cmd Prompt : nexususer@comopen12:~/ExpressJS_Project$ node app.js
+// Browser HIT URL : http://localhost:4000/
+// Database name : persondb
+// Collection name : users
+// Route : usr/
+
+
+
+mkdir ExpressJS_Project
+cd ExpressJS_Project
+npm install express --save
+express
+npm init             // Just Press Enter and Yes in last.
+npm install
+
+
+copy bin/www data to app.js file
+Add Respectively near of each others.
+Replace Var with Const
+remove extras comments and Extars Double coded Lines

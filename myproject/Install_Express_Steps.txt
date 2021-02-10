@@ -1,0 +1,50 @@
+nexususer@comopen12:~$ mkdir myproject
+nexususer@comopen12:~$ cd myproject/
+nexususer@comopen12:~/myproject$ npm install -g express-generator
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+/home/nexususer/.nvm/versions/node/v12.18.1/bin/express -> /home/nexususer/.nvm/versions/node/v12.18.1/lib/node_modules/express-generator/bin/express-cli.js
++ express-generator@4.16.1
+updated 1 package in 1.588s
+nexususer@comopen12:~/myproject$ npx express --view=ejs nodeapp
+
+   create : nodeapp/
+   create : nodeapp/public/
+   create : nodeapp/public/javascripts/
+   create : nodeapp/public/images/
+   create : nodeapp/public/stylesheets/
+   create : nodeapp/public/stylesheets/style.css
+   create : nodeapp/routes/
+   create : nodeapp/routes/index.js
+   create : nodeapp/routes/users.js
+   create : nodeapp/views/
+   create : nodeapp/views/error.ejs
+   create : nodeapp/views/index.ejs
+   create : nodeapp/app.js
+   create : nodeapp/package.json
+   create : nodeapp/bin/
+   create : nodeapp/bin/www
+
+   change directory:
+     $ cd nodeapp
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=nodeapp:* npm start
+
+nexususer@comopen12:~/myproject$ cd nodeapp
+nexususer@comopen12:~/myproject/nodeapp$ npm install
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 54 packages from 38 contributors and audited 55 packages in 2.61s
+found 0 vulnerabilities
+
+nexususer@comopen12:~/myproject/nodeapp$ npm start
+
+> nodeapp@0.0.0 start /home/nexususer/myproject/nodeapp
+> node ./bin/www
+
+GET / 200 8.705 ms - 207
+GET /stylesheets/style.css 200 2.296 ms - 111
+GET /favicon.ico 404 1.383 ms - 1033
+

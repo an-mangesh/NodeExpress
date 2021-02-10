@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title> <%= title %> </title>
+</head>
+
+<body>
+  <h1> <%= title %> </h1>
+  <h3><a href='/person'> All Records Listing</a></h3>
+  <form action="/person/update/<%= person._id%>" method="POST" autocapitalize="off">
+
+    <label>Name : </label>
+    <input type="text" name="name" value="<%= person.name %>">
+
+    <br><br>
+    <label>Contact Number : </label>
+    <input type="number" name="contact_number" value="<%= person.contact_number %>" >
+
+    <br><br>
+    <label>Address : </label>
+    <input type="textarea" name="address" value="<%= person.address %>" >
+
+    <br><br>
+    <label>Email Id : </label>
+    <input type="email" name="email_id" value="<%= person.email_id %>" >
+
+
+
+
+
+
+    <br><br>
+    <label> Qualification:  </label>
+    <br><br> Selected Is : <%= person.qualification %> <br><br>
+    <input type="checkbox" id="qualification" name="qualification" value="Schooling"> <label> Schooling </label>
+    <input type="checkbox" id="qualification" name="qualification" value="High_Schooling">
+    <label> High_Schooling </label>
+    <input type="checkbox" id="qualification" name="qualification" value="Graduated"> <label> Graduated </label>
+    <input type="checkbox" id="qualification" name="qualification" value="Post_Graduated">
+    <label> Post_Graduated </label>
+
+    <br><br>
+    <label> Position :  </label>
+
+    <br><br>  Selected Is : <%= person.position %> <br><br>
+
+    <select name="position" id="position">
+      <option name="Tester" value="Tester">Tester</option>
+      <option name="Developer" value="Developer">Developer</option>
+      <option name="CEO" value="CEO">CEO</option>
+      <option name="CTO" value="CTO">CTO</option>
+      <option name="Admin" value="Admin">Admin</option>
+      <option name="HR" value="HR">HR</option>
+
+    </select>
+
+
+
+    <button type="submit"> Update Document</button>
+  </form>
+
+</body>
+
+</html>

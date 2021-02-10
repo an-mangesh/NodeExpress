@@ -1,0 +1,11 @@
+html
+	head
+		title=title
+	body 
+		h3 Welcome to #{title} tutorial
+		form(action='/img_uploading' method="post",enctype="multipart/form-data") 
+			label(for='fileup') Select file for upload : 
+			input(type='file',name='imageupload')
+			br
+			br
+			input(type='submit',name='uploadimage',value='Upload Image')

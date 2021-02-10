@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Industry List</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <h3><a href="/industry/create">Create Employee</a></h3>
+    <h1>Industry List</h1>
+    <% if(industry.length>0) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Industry Name</th>
+          <th>Live Age</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<industry.length;i++) { %>
+        <tr>
+          <td><%= industry[i].name%></td>
+          <td><%= industry[i].live_age%></td>
+          <td><a href="/industry/edit/<%= industry[i]._id%>">Edit</a></td>
+          <td>
+            <form action="/industry/delete/<%= industry[i]._id%>" method="post">
+              <button type="submit">DELETE</button>
+            </form>
+
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <div>No Industry found.</div>
+    <% } %>
+  </div>
+</body>
+
+</html>
